@@ -60,23 +60,23 @@
     line-height:1.45;
     margin:0;
 }
-#home.hero.section{
+#home.hero{
+  max-width:1180px !important;
+  margin:0 auto !important;
+  padding:80px 5% !important;
   display:grid !important;
   grid-template-columns:430px 1fr !important;
+  gap:46px !important;
   align-items:center !important;
-  gap:70px !important;
-  max-width:1200px !important;
-  margin:0 auto !important;
-  padding:80px 50px !important;
-  text-align:left !important;
 }
 
 #home .hero-image{
-  width:430px !important;
+  width:100% !important;
 }
 
 #home .hero-img{
   width:100% !important;
+  max-width:430px !important;
   height:auto !important;
   display:block !important;
   border-radius:28px !important;
@@ -84,5 +84,11 @@
 }
 
 #home .hero-text{
-  max-width:560px !important;
+  width:100% !important;
+}
+
+@media(max-width:900px){
+  #home.hero{
+    grid-template-columns:1fr !important;
+  }
 }
