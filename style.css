@@ -263,12 +263,6 @@
 }
 
 .interest-list{
-    display:flex;
-    flex-direction:column;
-    gap:22px;
-}
-
-.interest-list{
     margin-top:28px;
     display:flex;
     flex-direction:column;
@@ -302,6 +296,7 @@
 }
 
 @media(max-width:900px){
+
     .mission-beyond{
         grid-template-columns:1fr;
     }
@@ -313,24 +308,15 @@
     .camera-image{
         height:auto;
     }
-}
 
-@media(max-width:560px){
-    .mission-beyond{
-        padding:40px 5%;
-        gap:35px;
-    }
-
-    .mission-card{
-        padding:24px;
-        min-height:auto;
-    }
-
-    .mission-card p{
-        font-size:19px;
-    }
-
-    .beyond-text{
-        font-size:17px;
+    .mission-beyond .interest-item img{
+        width:40px !important;
+        height:40px !important;
+        min-width:40px !important;
+        max-width:40px !important;
+        min-height:40px !important;
+        max-height:40px !important;
+        flex:0 0 40px !important;
+        object-fit:contain !important;
     }
 }
